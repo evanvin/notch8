@@ -114,8 +114,9 @@ section {
 }
 
 #team,
-#menu,
-#testimonial {
+#beer,
+#testimonial,
+#food {
   text-align: center;
 }
 
@@ -286,7 +287,7 @@ section {
 }
 
 .custom-navbar .navbar-toggle .icon-bar {
-  background: #252525;
+  background: #ffffff;
   border-color: transparent;
 }
 
@@ -297,7 +298,7 @@ section {
   }
 
   .custom-navbar.top-nav-collapse {
-    background: #ffffff;
+    background: #2c2722;
     -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
     box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
@@ -305,11 +306,11 @@ section {
   }
 
   .top-nav-collapse .navbar-brand {
-    color: #454545;
+    color: #ffffff;
   }
 
   .top-nav-collapse .nav li a {
-    color: #575757;
+    color: #ffffff;
   }
 
   .top-nav-collapse .nav .section-btn a {
@@ -430,6 +431,27 @@ section {
 }
 
 /*---------------------------------------
+      EVENTS
+  -----------------------------------------*/
+
+#events {
+  margin-top: 0px;
+}
+
+#events .section-title {
+  text-align: center;
+}
+
+.event-list {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.event-list i {
+  margin-right: 5px;
+}
+
+/*---------------------------------------
       TEAM
   -----------------------------------------*/
 
@@ -510,98 +532,65 @@ section {
 }
 
 /*---------------------------------------
-     MENU
+     BEER
   -----------------------------------------*/
 
-#menu {
-  padding-bottom: 0;
+#beer {
+  padding-bottom: 100px;
+  background: #f9f9f9;
 }
 
-#menu .container {
-  width: 100%;
-}
-
-#menu .col-md-4 {
+#beer .col-md-4 {
   margin: 0;
   padding: 0;
 }
 
-.menu-thumb img {
-  width: 100%;
-  transition: 0.5s;
+.beer-item {
+  background: transparent;
+  padding: 12px;
 }
 
-.menu-thumb:hover img {
-  transform: scale(1.15);
+.beer-item .beer-content > * {
+  margin: 0;
+  padding: 0;
 }
 
-#menu .menu-thumb {
-  overflow: hidden;
+.beer-item .beer-content {
+  background: #ffffff;
+  box-shadow: 1px 1px 3px rgb(0 0 0 / 10%);
+  padding: 35px 25px 20px 25px;
+}
+
+.beer-item .beer-content .title {
+  color: #2c3238;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.beer-item .beer-content .subtitle {
+  text-align: center;
   position: relative;
-  cursor: pointer;
-  width: 102%;
+  padding-bottom: 20px;
+  margin-bottom: 22px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #8f8f8f;
 }
 
-.menu-thumb .menu-info {
-  position: absolute;
-  top: 60%;
-  left: 0px;
-  right: 0px;
+.beer-item .beer-content .subtitle:after {
   bottom: 0px;
-  text-align: left;
-  padding: 25px 30px;
-  transition: 0.5s 0.2s;
-}
-
-.menu-info .menu-item {
-  float: left;
-}
-
-.menu-info .menu-price {
-  float: right;
-}
-
-.menu-info .menu-price span {
-  font-size: 20px;
-  font-weight: bold;
-  line-height: normal;
+  position: absolute;
+  content: '';
   display: block;
-  margin-top: 10px;
+  left: 50%;
+  margin-left: -25px;
+  width: 50px;
+  height: 2px;
+  background: #e5e5e5;
 }
 
-.menu-thumb .menu-info h3,
-.menu-thumb .menu-info p,
-.menu-thumb .menu-info span {
-  transform: translateY(100%);
-  opacity: 0;
-  display: block;
-  transition: 0.5s 0.2s;
-  color: #ffffff;
-  z-index: 2;
-  position: relative;
-}
-
-.menu-thumb .menu-info h3 {
-  margin-top: 0;
-}
-
-.menu-thumb .menu-info p {
-  color: #d9d9d9;
-  text-transform: uppercase;
-  font-size: 10px;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-.menu-thumb:hover .menu-info h3,
-.menu-thumb:hover .menu-info p,
-.menu-thumb:hover .menu-info span {
-  transform: translateY(0px);
-  opacity: 1;
-}
-
-.menu-thumb:hover .menu-info {
-  background: rgba(0, 0, 0, 0.8);
+.beer-item .beer-content .description {
+  margin-bottom: 15px;
 }
 
 /*---------------------------------------
@@ -711,6 +700,7 @@ section {
   -----------------------------------------*/
 
 footer {
+  background: #191612;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   padding: 120px 0;
   padding-bottom: 80px;
@@ -721,12 +711,13 @@ footer .section-title {
 }
 
 footer h2 {
+  color: #ffffff;
   font-size: 20px;
 }
 
 footer a,
 footer p {
-  color: #909090;
+  color: #aaaaaa;
 }
 
 footer strong {
@@ -856,17 +847,13 @@ footer .social-icon {
     margin-bottom: 50px;
   }
 
-  #menu .menu-thumb {
-    width: 103%;
-  }
-
-  #testimonial {
-    background-position: 50% 0 !important;
-  }
-
   #google-map,
   .footer-info {
     margin-bottom: 50px;
+  }
+
+  #events {
+    margin-top: 65px;
   }
 }
 
@@ -889,7 +876,7 @@ footer .social-icon {
   }
 
   .custom-navbar {
-    background: #ffffff;
+    background: #2c2722;
     -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
     box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
@@ -904,13 +891,13 @@ footer .social-icon {
 
   .custom-navbar .navbar-brand,
   .top-nav-collapse .navbar-brand {
-    color: #252525;
+    color: #ffffff;
     font-weight: 600;
   }
 
   .custom-navbar .nav li a,
   .top-nav-collapse .nav li a {
-    color: #575757;
+    color: #ffffff;
   }
 
   .custom-navbar .navbar-nav.navbar-right li {
@@ -962,7 +949,19 @@ footer .social-icon {
   }
 }
 
-/* GRID */
-.beer-grid {
-  border: 1px solid #333;
+.qr-code {
+  max-width: 200px;
+  margin: 10px;
+}
+
+.list-group-flush .list-group-item {
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0;
+}
+.list-group-flush:first-child .list-group-item:first-child {
+  border-top: 0;
+}
+.list-group-flush:last-child .list-group-item:last-child {
+  border-bottom: 0;
 }
