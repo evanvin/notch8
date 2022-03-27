@@ -449,6 +449,7 @@ section {
 
 .event-list i {
   margin-right: 5px;
+  display: inline-block;
 }
 
 /*---------------------------------------
