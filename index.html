@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="js/agegate.min.js"></script>
+    <script>
+      function ready(fn) {
+        if (
+          document.attachEvent
+            ? document.readyState === 'complete'
+            : document.readyState !== 'loading'
+        ) {
+          fn();
+        } else {
+          document.addEventListener('DOMContentLoaded', fn);
+        }
+      }
+      ready(function () {
+        var popup = new Agegate({
+          cancelUrl: 'https://my90stv.com/#DLeVYtsQyhE',
+        });
+      });
+    </script>
     <title>Notch 8 Brewery</title>
 
     <meta charset="UTF-8" />
@@ -12,7 +31,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
-    <script src="https://kit.fontawesome.com/c78b22ea91.js" crossorigin="anonymous"></script>
+
+    <script
+      src="https://kit.fontawesome.com/c78b22ea91.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/owl.carousel.css" />
@@ -327,13 +350,19 @@
                   <li class="list-group-item">
                     <span class="badge">March 27, 2022</span>
                     <span class="badge">9AM - 10AM</span>
-                    <i class="fa-solid fa-sun media-object" aria-hidden="true"></i>
+                    <i
+                      class="fa-solid fa-sun media-object"
+                      aria-hidden="true"
+                    ></i>
                     Sunday Yoga
                   </li>
                   <li class="list-group-item">
                     <span class="badge">March 27, 2022</span>
                     <span class="badge">1PM - 4PM</span>
-                    <i class="fa-solid fa-bacon media-object" aria-hidden="true"></i>
+                    <i
+                      class="fa-solid fa-bacon media-object"
+                      aria-hidden="true"
+                    ></i>
                     BBQ
                   </li>
                   <li class="list-group-item">
@@ -345,7 +374,10 @@
                   <li class="list-group-item">
                     <span class="badge">March 29, 2022</span>
                     <span class="badge">7PM</span>
-                    <i class="fa-solid fa-gamepad media-object" aria-hidden="true"></i>
+                    <i
+                      class="fa-solid fa-gamepad media-object"
+                      aria-hidden="true"
+                    ></i>
                     Trivia Night
                   </li>
                 </ul>
@@ -639,6 +671,19 @@
     </footer>
 
     <!-- SCRIPTS -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-156600534-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-156600534-1');
+    </script>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.stellar.min.js"></script>

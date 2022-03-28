@@ -950,10 +950,17 @@ footer .social-icon {
   }
 }
 
+/*---------------------------------------
+      QR CODE
+  -----------------------------------------*/
 .qr-code {
   max-width: 200px;
   margin: 10px;
 }
+
+/*---------------------------------------
+      LIST-GROUP-FLUSH
+  -----------------------------------------*/
 
 .list-group-flush .list-group-item {
   border-right: 0;
@@ -965,4 +972,54 @@ footer .social-icon {
 }
 .list-group-flush:last-child .list-group-item:last-child {
   border-bottom: 0;
+}
+
+/*---------------------------------------
+      AGE GATE
+  -----------------------------------------*/
+
+.popup-container {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  padding: 40px;
+  margin: 80px auto 0;
+  background: white;
+  padding: 40px 40px;
+  text-align: center;
+  box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.1);
+  @media (max-width: 640px) {
+    padding: 40px 20px;
+  }
+}
+
+.popup-body {
+  box-sizing: border-box;
+  font-size: 26px;
+  margin-bottom: 25px;
+  font-size: 36px;
+  line-height: 1.35;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  @media (max-width: 640px) {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+}
+
+.popup-btn {
+  box-sizing: border-box;
+  padding: 6px 12px;
+  margin-right: 10px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 4px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
 }
